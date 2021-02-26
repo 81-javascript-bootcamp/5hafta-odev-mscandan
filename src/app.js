@@ -48,7 +48,7 @@ class PomodoroApp {
       e.preventDefault();
       const task = { title: this.$taskFormInput.value };
       // bos task ekleme durumu fix
-      if (task.title) {
+      if (task.title.trim()) {
         this.addTask(task);
       } else {
         alert('Task title cannot be empty');
